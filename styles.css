@@ -50,22 +50,17 @@ a {
     color: white;
     transition: .5s ease;
 }
-
-#one:active {
-    background: linear-gradient(45deg, #de2828, #dea128, #d8de28, #46de28, #28b4de, #8328de, #c620e3);
-    background-size: 400%;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    animation: rainbow 3s ease infinite;
-    scale: 3;
-}
-
-a:active {
-    color: tomato;
-}
 .container:active {
     scale: 1.1;
     box-shadow: 0 0 30px rgba(230, 103, 255, 0.367);
+    #one{
+        background: linear-gradient(45deg, #de2828, #dea128, #d8de28, #46de28, #28b4de, #8328de, #c620e3);
+        background-size: 400%;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        animation: rainbow 3s ease infinite;
+        scale: 3;
+    }
 }
 @keyframes rainbow {
     0% {

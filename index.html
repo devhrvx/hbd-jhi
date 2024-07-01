@@ -17,9 +17,14 @@
         <h3 id="bday">Happy Birthday! 🎂</h3>
     </div>
     <script>
-        document.querySelector('.container').addEventListener('click', () => {
-            window.location.href = 'https://youtube.com/shorts/1AB-3xC0CgY?si=9fcIUSiEdV_J8ktE';
-        });
+        const container = document.querySelector('.container');
+
+        const handleRedirect = () => {
+           window.location.href = 'https://youtube.com/shorts/1AB-3xC0CgY?si=9fcIUSiEdV_J8ktE';
+        };
+
+        container.addEventListener('click', handleRedirect);
+        container.addEventListener('touchend', handleRedirect);
     </script>
 </body>
 </html>

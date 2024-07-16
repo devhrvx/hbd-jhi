@@ -1,17 +1,26 @@
 body {
     color: #fff;
-    background-color: #232323;
+    background-color: #ecda7d;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 100vh;
+    overflow: hidden;
     margin: 0;
 }
-
+center {
+    color: #312c22;
+}
 .container {
+    background-image: url('jhi.png');
+    background-size: cover;
+    background-position-x: 175px;
+    background-position-y: 30px;
     transition: .5s ease;
     font-family: 'Rubik', sans-serif;
     display: flex;
+    background-color: #312c22;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
@@ -31,7 +40,7 @@ body {
 #july {
     width: 100%;
     font-weight: 800;
-    color: tomato;
+    color: rgb(255, 245, 151);
     border-bottom: 2px white solid;
     padding-bottom: 1%;
 }
@@ -59,7 +68,7 @@ a {
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
         animation: rainbow 3s ease infinite;
-        scale: 3;
+        scale: 2;
     }
 }
 @keyframes rainbow {
@@ -73,5 +82,15 @@ a {
 
     100% {
         background-position: 0% 50%;
+    }
+}
+
+@media (max-width: 600px) {
+    .container {
+        width: 50%;
+        height: 65%;
+    }
+    #one {
+        font-size: 500%;
     }
 }
